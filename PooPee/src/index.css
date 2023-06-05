@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  background-color: rgb(220, 228, 228);
+  font-family: sans-serif;
+}
+
+.container-center {
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 3%;
+  width: 60%;
+  text-align: center;
+  padding-top: 1rem;
+  border-top-left-radius: 20%;
+  border-top-right-radius: 20%;
+}
+
+.container-pages {
+  margin: 0 auto;
+  width: 60%;
+  padding: 1.5rem 0;
+  background-color: white;
+  text-align: center;
+}
+
+.icons-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.icons-container,
+h3 {
+  padding-bottom: 0.7rem;
+}
+
+.item {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  border-radius: 10rem;
+  padding: 0.5rem 0.1rem;
+  transition: 0.3s;
+}
+
+.item:hover {
+  transform: translateY(-0.2rem);
+}
+
+.poo {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  justify-self: end;
+  color: rgb(128, 41, 41);
+}
+
+.pee {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  color: rgb(151, 129, 29);
+}
+.feed {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  justify-self: start;
+  color: rgb(41, 57, 128);
+}
+
+.text {
+  display: block;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.underline {
+  border-bottom: 0.7px solid black;
+  width: 60%;
+  margin: 0 auto;
+  color: blue;
+}
+
+.btn--form {
+  background: #00d86c;
+  border-radius: 45%;
+  padding: 0.4rem;
+  border: none;
+  transform: translateY(-4px);
+  transition: 0.3s;
+}
+
+.btn--form:hover {
+  transform: translateY(-6px);
+}
+
+.btn--add {
+  background: #00d86c;
+  border-radius: 45%;
+  padding: 0.4rem;
+  border: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn--add:hover {
+  transform: translateY(-2px);
+}
+
+.btn--add_empty {
+  background: #00d86c17;
+  border-radius: 45%;
+  padding: 0.4rem;
+  border: none;
+  font-weight: 100;
+}
+
+.title--underline {
+  border-bottom: 0.7px solid black;
+  width: 60px;
+  margin: 0 auto;
+  margin-top: 0.4rem;
+  margin-bottom: 1.4rem;
+}
+
+.list-item__container {
+  width: 60%;
+  height: 400px;
+  background-color: white;
+  margin: 0 auto;
+  list-style: none;
+  line-height: 1.5;
+  border: solid 2px rgb(124, 71, 35);
+}
+
+.list-item {
+  padding-left: 3rem;
+}
+
+.list-item__container li:nth-child(odd) {
+  background-color: rgb(236, 236, 236);
+}

@@ -1,0 +1,6 @@
+FROM mysql:8
+ENV MYSQL_ROOT_PASSWORD="2481992"
+ENV MYSQL_PASSWORD="2481992"
+ENV MYSQL_USER="poopee-dev"
+COPY "../Dump20230604/" /docker-entrypoint-initdb.d
+EXPOSE 3306/tcp
