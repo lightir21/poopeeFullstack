@@ -5,6 +5,7 @@ import { FeedModule } from './feed/feed.module';
 import { PooModule } from './poo/poo.module';
 import { PeeService } from './pee/pee.service';
 import { PeeModule } from './pee/pee.module';
+import { Feed } from './feed/entity/feed.entity';
 
 @Module({
   imports: [
@@ -13,12 +14,12 @@ import { PeeModule } from './pee/pee.module';
     PeeModule,
     TypeOrmModule.forRoot({
       type: 'mysql',
-      host: 'localhost',
-      port: 3306,
+      host: '0.0.0.0',
+      port: 43306,
       username: 'root',
-      password: 'root',
-      database: 'test',
-      entities: [],
+      password: '2481992',
+      database: 'feed_db',
+      entities: [Feed],
       synchronize: true,
     }),
   ],
